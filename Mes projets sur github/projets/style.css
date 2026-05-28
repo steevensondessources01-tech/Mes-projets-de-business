@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4fbff;
+    color: #1e2a36;
+}
+
+.project-hero {
+    text-align: center;
+    padding: 70px 20px;
+    color: white;
+    background: linear-gradient(135deg, #0b4f6c, #2a9d8f);
+}
+
+.project-hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.project-nav {
+    padding: 15px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-nav a {
+    text-decoration: none;
+    color: #0b4f6c;
+    font-weight: bold;
+}
+
+.section {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.section h2 {
+    color: #0b4f6c;
+    margin-bottom: 15px;
+}
+
+.box {
+    background: #e8f6ff;
+    padding: 15px;
+    border-left: 4px solid #2a9d8f;
+    margin-top: 15px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .project-hero {
+        padding: 60px 20px;
+    }
+
+    .project-hero h1 {
+        font-size: 30px;
+    }
+
+    .project-section {
+        padding: 30px 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* =========================
+   PETITS TELEPHONES
+========================= */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .project-hero h1 {
+        font-size: 24px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .section h2,
+    .project-section h2 {
+        font-size: 22px;
+    }
+
+}
