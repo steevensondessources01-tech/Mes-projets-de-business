@@ -1,194 +1,75 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", Roboto, Arial, sans-serif;
-}
-
 body {
-    background: #f3f5f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4fbff;
     color: #1e2a36;
-    line-height: 1.6;
 }
 
-/* ================= HERO ================= */
-
-.hero {
-    background: linear-gradient(135deg, #0f3d5e, #1f6f8b);
-    color: white;
+.project-hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 70px 20px;
+    color: white;
+    background: linear-gradient(135deg, #0b4f6c, #2a9d8f);
 }
 
-.hero h1 {
-    font-size: 42px;
+.project-hero h1 {
+    font-size: 40px;
     margin-bottom: 10px;
-    letter-spacing: 1px;
 }
 
-.hero p {
-    font-size: 18px;
-    opacity: 0.9;
-}
-
-.hero .subtitle {
-    margin-top: 12px;
-    font-size: 15px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.85;
-}
-
-/* ================= NAV ================= */
-
-.nav {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    background: white;
+.project-nav {
     padding: 15px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background: white;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.nav a {
+.project-nav a {
     text-decoration: none;
-    color: #1f6f8b;
-    font-weight: 600;
-    transition: 0.2s;
+    color: #0b4f6c;
+    font-weight: bold;
 }
-
-.nav a:hover {
-    color: #0f3d5e;
-}
-
-/* ================= SECTIONS ================= */
 
 .section {
-    padding: 60px 20px;
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
+    padding: 50px 20px;
 }
 
 .section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #0f3d5e;
-}
-
-/* ================= PROJECTS ================= */
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 20px;
-}
-
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card h3 {
-    color: #1f6f8b;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 14px;
-    margin-bottom: 12px;
-}
-
-.card ul {
-    margin-left: 18px;
+    color: #0b4f6c;
     margin-bottom: 15px;
 }
 
-.card ul li {
-    font-size: 13px;
-    margin-bottom: 5px;
+.box {
+    background: #e8f6ff;
+    padding: 15px;
+    border-left: 4px solid #2a9d8f;
+    margin-top: 15px;
 }
 
-/* ================= BUTTON ================= */
-
-.btn {
-    display: inline-block;
-    padding: 10px 16px;
-    background: #1f6f8b;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 14px;
-    transition: 0.2s;
-}
-
-.btn:hover {
-    background: #0f3d5e;
-}
-
-/* ================= CONTACT ================= */
-
-#contact p {
-    margin-bottom: 8px;
-}
-
-/* ================= FOOTER ================= */
-
-.footer {
-    text-align: center;
-    padding: 25px;
-    font-size: 13px;
-    color: #666;
-    background: #fff;
-    margin-top: 40px;
-    border-top: 1px solid #ddd;
-}
-
-/* ================= LISTES ================= */
-
-ul, ol {
-    padding-left: 25px;
-    margin: 15px 0;
+ul {
+    margin-left: 20px;
 }
 
 li {
     margin-bottom: 8px;
 }
 
-/* ============================================
-   RESPONSIVE DESIGN AMÉLIORÉ
-   ============================================ */
-
-/* TABLETTES (768px - 1024px) */
-@media (max-width: 1024px) {
-    .section {
-        max-width: 90%;
-        padding: 50px 20px;
-    }
-
-    .hero {
-        padding: 70px 20px;
-    }
-
-    .hero h1 {
-        font-size: 38px;
-    }
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
 }
 
-/* TABLETTES MOYENNES ET PETITES (601px - 768px) */
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
 @media (max-width: 768px) {
-    /* Hero */
+
     .hero {
         padding: 60px 20px;
     }
@@ -199,266 +80,71 @@ li {
     }
 
     .hero p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
-    /* Navigation */
-    .nav {
-        flex-wrap: wrap;
-        gap: 15px;
-        padding: 12px 15px;
+    .container {
+        width: 95%;
     }
 
-    .nav a {
-        font-size: 14px;
-        padding: 5px 10px;
-    }
-
-    /* Sections */
-    .section {
-        padding: 40px 20px;
-    }
-
-    .section h2 {
-        font-size: 26px;
-        margin-bottom: 15px;
-    }
-
-    /* Grille projets */
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
-
-    /* Cartes */
-    .card {
-        padding: 20px;
-    }
-
-    .card h3 {
-        font-size: 20px;
-    }
-
-    /* Footer */
-    .footer {
-        padding: 20px;
-        font-size: 12px;
-    }
-}
-
-/* GRANDS TELEPHONES (481px - 600px) */
-@media (max-width: 600px) {
-    /* Hero */
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 14px;
-    }
-
-    .hero .subtitle {
-        font-size: 13px;
-    }
-
-    /* Sections */
-    .section {
-        padding: 35px 15px;
-    }
-
-    .section h2 {
-        font-size: 24px;
-    }
-
-    /* Grille - 1 colonne */
-    .projects-grid {
+    .grid {
         grid-template-columns: 1fr;
-        gap: 15px;
     }
 
-    /* Cartes */
     .card {
-        padding: 18px;
+        padding: 20px;
     }
 
-    .card p {
-        font-size: 13px;
+    .project-hero {
+        padding: 60px 20px;
     }
 
-    /* Liste */
-    ul, ol {
-        padding-left: 20px;
+    .project-hero h1 {
+        font-size: 30px;
     }
 
-    li {
-        font-size: 14px;
-    }
-}
-
-/* PETITS TELEPHONES (max 480px) */
-@media (max-width: 480px) {
-    /* Hero */
-    .hero {
-        padding: 50px 15px;
-    }
-
-    .hero h1 {
-        font-size: 24px;
-    }
-
-    .hero p {
-        font-size: 13px;
-    }
-
-    /* Navigation */
-    .nav {
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .nav a {
-        font-size: 12px;
-        padding: 4px 8px;
-    }
-
-    /* Sections */
-    .section {
+    .project-section {
         padding: 30px 15px;
     }
 
-    .section h2 {
-        font-size: 22px;
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
-    /* Cartes */
-    .card {
-        padding: 15px;
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* =========================
+   PETITS TELEPHONES
+========================= */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .project-hero h1 {
+        font-size: 24px;
     }
 
     .card h3 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
-    .card p {
-        font-size: 12px;
-    }
-
-    .card ul li {
-        font-size: 12px;
-    }
-
-    /* Boutons */
-    .btn {
-        padding: 8px 14px;
-        font-size: 13px;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Footer */
-    .footer {
-        padding: 15px;
-        font-size: 11px;
-    }
-}
-
-/* TRES PETITS TELEPHONES (max 360px) */
-@media (max-width: 360px) {
-    .hero h1 {
+    .section h2,
+    .project-section h2 {
         font-size: 22px;
     }
 
-    .hero p {
-        font-size: 12px;
-    }
-
-    .section h2 {
-        font-size: 20px;
-    }
-
-    .card {
-        padding: 12px;
-    }
-
-    .card h3 {
-        font-size: 17px;
-    }
-}
-
-/* ================= ORIENTATION PAYSAGE ================= */
-@media (max-height: 500px) and (orientation: landscape) {
-    .hero {
-        padding: 30px 20px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .section {
-        padding: 25px 20px;
-    }
-}
-
-/* ================= SUPPORT HAUTE RÉSOLUTION ================= */
-@media (min-width: 1400px) {
-    .section {
-        max-width: 1200px;
-    }
-
-    .hero h1 {
-        font-size: 52px;
-    }
-
-    .hero p {
-        font-size: 20px;
-    }
-
-    .projects-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }
-
-    .card {
-        padding: 30px;
-    }
-
-    .card p {
-        font-size: 15px;
-    }
-}
-
-/* ================= IMPRESSION ================= */
-@media print {
-    .nav {
-        display: none;
-    }
-
-    .hero {
-        background: #0f3d5e;
-        padding: 20px;
-    }
-
-    .card {
-        box-shadow: none;
-        border: 1px solid #ddd;
-        break-inside: avoid;
-    }
-
-    .footer {
-        margin-top: 20px;
-    }
-}
-
-/* ================= ACCESSIBILITÉ ================= */
-@media (prefers-reduced-motion: reduce) {
-    .card,
-    .btn,
-    .nav a {
-        transition: none;
-    }
-
-    .card:hover {
-        transform: none;
-    }
 }
